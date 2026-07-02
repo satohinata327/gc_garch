@@ -1,0 +1,10 @@
+# pair_t_static generation
+run_dir: gc_garch/models/pair_t_static/runs/pair_t_static_001
+train_csv: train_data/train_sp500_us10y.csv
+features: sp500, DGS10
+num_generated: 20
+generated_length: 1260
+burn_in: 750
+pair_copula_rho: -0.051000
+pair_copula_df: 6.400000
+candidate_selection: disabled

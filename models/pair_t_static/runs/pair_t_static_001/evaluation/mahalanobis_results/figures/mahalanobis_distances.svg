@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="550" y="35" text-anchor="middle" font-size="22" font-family="Arial">Mahalanobis distance from real-data feature distribution</text>
+<line x1="90" y1="440" x2="1070" y2="440" stroke="#333"/>
+<line x1="90" y1="70" x2="90" y2="440" stroke="#333"/>
+<line x1="85" y1="440.00" x2="1070" y2="440.00" stroke="#ddd"/>
+<text x="80" y="444.00" text-anchor="end" font-size="12" font-family="Arial">0.00</text>
+<line x1="85" y1="366.00" x2="1070" y2="366.00" stroke="#ddd"/>
+<text x="80" y="370.00" text-anchor="end" font-size="12" font-family="Arial">2.47</text>
+<line x1="85" y1="292.00" x2="1070" y2="292.00" stroke="#ddd"/>
+<text x="80" y="296.00" text-anchor="end" font-size="12" font-family="Arial">4.94</text>
+<line x1="85" y1="218.00" x2="1070" y2="218.00" stroke="#ddd"/>
+<text x="80" y="222.00" text-anchor="end" font-size="12" font-family="Arial">7.40</text>
+<line x1="85" y1="144.00" x2="1070" y2="144.00" stroke="#ddd"/>
+<text x="80" y="148.00" text-anchor="end" font-size="12" font-family="Arial">9.87</text>
+<line x1="85" y1="70.00" x2="1070" y2="70.00" stroke="#ddd"/>
+<text x="80" y="74.00" text-anchor="end" font-size="12" font-family="Arial">12.34</text>
+<rect x="90.00" y="70.00" width="37.60" height="370.00" fill="#1f77b4"/>
+<text x="108.80" y="64.00" text-anchor="middle" font-size="11" font-family="Arial">12.34</text>
+<text x="108.80" y="458.00" transform="rotate(45 108.80 458.00)" font-size="12" font-family="Arial">mask4_gc.csv</text>
+<rect x="139.60" y="86.04" width="37.60" height="353.96" fill="#1f77b4"/>
+<text x="158.40" y="80.04" text-anchor="middle" font-size="11" font-family="Arial">11.81</text>
+<text x="158.40" y="458.00" transform="rotate(45 158.40 458.00)" font-size="12" font-family="Arial">mask13_gc.csv</text>
+<rect x="189.20" y="101.45" width="37.60" height="338.55" fill="#1f77b4"/>
+<text x="208.00" y="95.45" text-anchor="middle" font-size="11" font-family="Arial">11.29</text>
+<text x="208.00" y="458.00" transform="rotate(45 208.00 458.00)" font-size="12" font-family="Arial">mask10_gc.csv</text>
+<rect x="238.80" y="115.61" width="37.60" height="324.39" fill="#1f77b4"/>
+<text x="257.60" y="109.61" text-anchor="middle" font-size="11" font-family="Arial">10.82</text>
+<text x="257.60" y="458.00" transform="rotate(45 257.60 458.00)" font-size="12" font-family="Arial">mask14_gc.csv</text>
+<rect x="288.40" y="119.06" width="37.60" height="320.94" fill="#1f77b4"/>
+<text x="307.20" y="113.06" text-anchor="middle" font-size="11" font-family="Arial">10.70</text>
+<text x="307.20" y="458.00" transform="rotate(45 307.20 458.00)" font-size="12" font-family="Arial">mask12_gc.csv</text>
+<rect x="338.00" y="121.00" width="37.60" height="319.00" fill="#1f77b4"/>
+<text x="356.80" y="115.00" text-anchor="middle" font-size="11" font-family="Arial">10.64</text>
+<text x="356.80" y="458.00" transform="rotate(45 356.80 458.00)" font-size="12" font-family="Arial">mask2_gc.csv</text>
+<rect x="387.60" y="134.85" width="37.60" height="305.15" fill="#1f77b4"/>
+<text x="406.40" y="128.85" text-anchor="middle" font-size="11" font-family="Arial">10.18</text>
+<text x="406.40" y="458.00" transform="rotate(45 406.40 458.00)" font-size="12" font-family="Arial">mask9_gc.csv</text>
+<rect x="437.20" y="153.46" width="37.60" height="286.54" fill="#1f77b4"/>
+<text x="456.00" y="147.46" text-anchor="middle" font-size="11" font-family="Arial">9.56</text>
+<text x="456.00" y="458.00" transform="rotate(45 456.00 458.00)" font-size="12" font-family="Arial">mask5_gc.csv</text>
+<rect x="486.80" y="172.62" width="37.60" height="267.38" fill="#1f77b4"/>
+<text x="505.60" y="166.62" text-anchor="middle" font-size="11" font-family="Arial">8.92</text>
+<text x="505.60" y="458.00" transform="rotate(45 505.60 458.00)" font-size="12" font-family="Arial">mask19_gc.csv</text>
+<rect x="536.40" y="178.62" width="37.60" height="261.38" fill="#1f77b4"/>
+<text x="555.20" y="172.62" text-anchor="middle" font-size="11" font-family="Arial">8.72</text>
+<text x="555.20" y="458.00" transform="rotate(45 555.20 458.00)" font-size="12" font-family="Arial">mask1_gc.csv</text>
+<rect x="586.00" y="195.32" width="37.60" height="244.68" fill="#1f77b4"/>
+<text x="604.80" y="189.32" text-anchor="middle" font-size="11" font-family="Arial">8.16</text>
+<text x="604.80" y="458.00" transform="rotate(45 604.80 458.00)" font-size="12" font-family="Arial">mask11_gc.csv</text>
+<rect x="635.60" y="195.38" width="37.60" height="244.62" fill="#1f77b4"/>
+<text x="654.40" y="189.38" text-anchor="middle" font-size="11" font-family="Arial">8.16</text>
+<text x="654.40" y="458.00" transform="rotate(45 654.40 458.00)" font-size="12" font-family="Arial">mask18_gc.csv</text>
+<rect x="685.20" y="204.00" width="37.60" height="236.00" fill="#1f77b4"/>
+<text x="704.00" y="198.00" text-anchor="middle" font-size="11" font-family="Arial">7.87</text>
+<text x="704.00" y="458.00" transform="rotate(45 704.00 458.00)" font-size="12" font-family="Arial">mask20_gc.csv</text>
+<rect x="734.80" y="216.27" width="37.60" height="223.73" fill="#1f77b4"/>
+<text x="753.60" y="210.27" text-anchor="middle" font-size="11" font-family="Arial">7.46</text>
+<text x="753.60" y="458.00" transform="rotate(45 753.60 458.00)" font-size="12" font-family="Arial">mask6_gc.csv</text>
+<rect x="784.40" y="218.11" width="37.60" height="221.89" fill="#1f77b4"/>
+<text x="803.20" y="212.11" text-anchor="middle" font-size="11" font-family="Arial">7.40</text>
+<text x="803.20" y="458.00" transform="rotate(45 803.20 458.00)" font-size="12" font-family="Arial">mask17_gc.csv</text>
+<rect x="834.00" y="221.97" width="37.60" height="218.03" fill="#1f77b4"/>
+<text x="852.80" y="215.97" text-anchor="middle" font-size="11" font-family="Arial">7.27</text>
+<text x="852.80" y="458.00" transform="rotate(45 852.80 458.00)" font-size="12" font-family="Arial">mask7_gc.csv</text>
+<rect x="883.60" y="230.88" width="37.60" height="209.12" fill="#1f77b4"/>
+<text x="902.40" y="224.88" text-anchor="middle" font-size="11" font-family="Arial">6.97</text>
+<text x="902.40" y="458.00" transform="rotate(45 902.40 458.00)" font-size="12" font-family="Arial">mask3_gc.csv</text>
+<rect x="933.20" y="233.45" width="37.60" height="206.55" fill="#1f77b4"/>
+<text x="952.00" y="227.45" text-anchor="middle" font-size="11" font-family="Arial">6.89</text>
+<text x="952.00" y="458.00" transform="rotate(45 952.00 458.00)" font-size="12" font-family="Arial">mask15_gc.csv</text>
+<rect x="982.80" y="265.53" width="37.60" height="174.47" fill="#1f77b4"/>
+<text x="1001.60" y="259.53" text-anchor="middle" font-size="11" font-family="Arial">5.82</text>
+<text x="1001.60" y="458.00" transform="rotate(45 1001.60 458.00)" font-size="12" font-family="Arial">mask8_gc.csv</text>
+<rect x="1032.40" y="291.21" width="37.60" height="148.79" fill="#1f77b4"/>
+<text x="1051.20" y="285.21" text-anchor="middle" font-size="11" font-family="Arial">4.96</text>
+<text x="1051.20" y="458.00" transform="rotate(45 1051.20 458.00)" font-size="12" font-family="Arial">mask16_gc.csv</text>
+<text x="22" y="255.00" transform="rotate(-90 22 255.00)" text-anchor="middle" font-size="14" font-family="Arial">Mahalanobis distance</text>
+</svg>

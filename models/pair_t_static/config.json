@@ -1,0 +1,55 @@
+{
+  "run_name": "run_001",
+  "output_dir": "gc_garch/models/pair_t_static/runs/run_001",
+  "num_generated": 20,
+  "candidate_selection": {
+    "enabled": false
+  },
+  "volatility_model": "gjr_garch11",
+  "gjr_garch": {
+    "gamma_grid": [0.0, 0.02, 0.05, 0.08, 0.12, 0.16, 0.20, 0.26]
+  },
+  "pair_copula": {
+    "type": "static_t",
+    "df_min": 3.0,
+    "df_max": 30.0,
+    "df_step": 0.1,
+    "rho_min": -0.5,
+    "rho_max": 0.5,
+    "rho_step": 0.01
+  },
+  "garch_fit": {
+    "default": {
+      "min_persistence": 0.0,
+      "initial_max_persistence": 0.9985,
+      "max_persistence": 0.9985,
+      "alpha_min": 0.02,
+      "alpha_max": 0.20,
+      "beta_min": 0.70,
+      "beta_max": 0.985,
+      "profile": "default"
+    },
+    "features": {
+      "sp500": {
+        "min_persistence": 0.94,
+        "initial_max_persistence": 0.992,
+        "max_persistence": 0.992,
+        "alpha_min": 0.03,
+        "alpha_max": 0.16,
+        "beta_min": 0.74,
+        "beta_max": 0.94,
+        "profile": "gjr_short_mid_volatility_clustering"
+      },
+      "DGS10": {
+        "min_persistence": 0.995,
+        "initial_max_persistence": 0.9985,
+        "max_persistence": 0.9985,
+        "alpha_min": 0.015,
+        "alpha_max": 0.09,
+        "beta_min": 0.88,
+        "beta_max": 0.985,
+        "profile": "gjr_long_volatility_clustering"
+      }
+    }
+  }
+}

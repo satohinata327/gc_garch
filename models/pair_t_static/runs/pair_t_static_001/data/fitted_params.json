@@ -1,0 +1,85 @@
+{
+  "model": "pair_t_static",
+  "description": "Two-series static Student-t pair-copula with per-series GJR-GARCH(1,1) marginals.",
+  "train_csv": "train_data/train_sp500_us10y.csv",
+  "features": [
+    "sp500",
+    "DGS10"
+  ],
+  "scale_factor": 100.0,
+  "generated_length": 1260,
+  "burn_in": 750,
+  "num_generated": 20,
+  "seed": 20260702,
+  "candidate_selection": {
+    "enabled": false
+  },
+  "marginals": {
+    "sp500": {
+      "mu": 0.03146504683046016,
+      "omega": 0.015616906353284018,
+      "alpha": 0.021666666666666664,
+      "beta": 0.9030555555555555,
+      "unconditional_variance": 1.1132844133034085,
+      "gamma": 0.12249999999999998,
+      "volatility_model": "gjr_garch11"
+    },
+    "DGS10": {
+      "mu": 0.0026469390525315595,
+      "omega": 0.15540578236342914,
+      "alpha": 0.05583333333333333,
+      "beta": 0.9406944444444444,
+      "unconditional_variance": 44.75686532066632,
+      "gamma": 0.0,
+      "volatility_model": "gjr_garch11"
+    }
+  },
+  "persistence_summary": {
+    "sp500": {
+      "alpha_plus_beta": 0.9247222222222221,
+      "alpha_plus_half_gamma_plus_beta": 0.9859722222222221,
+      "gjr_gamma": 0.12249999999999998,
+      "volatility_half_life_lags": 49.06508267685542
+    },
+    "DGS10": {
+      "alpha_plus_beta": 0.9965277777777777,
+      "alpha_plus_half_gamma_plus_beta": 0.9965277777777777,
+      "gjr_gamma": 0.0,
+      "volatility_half_life_lags": 199.2796134985903
+    }
+  },
+  "pair_copula": {
+    "type": "static_t_pair_copula",
+    "rho": -0.050999999999999594,
+    "degrees_of_freedom": 6.4,
+    "correlation_matrix": [
+      [
+        1.0,
+        -0.050999999999999594
+      ],
+      [
+        -0.050999999999999594,
+        1.0
+      ]
+    ],
+    "loglik": -40882.76803446935,
+    "n_observations": 14734,
+    "fit_summary": {
+      "loglik": -40882.76803446935,
+      "rho": -0.050999999999999594,
+      "degrees_of_freedom": 6.4,
+      "correlation_matrix": [
+        [
+          1.0,
+          -0.050999999999999594
+        ],
+        [
+          -0.050999999999999594,
+          1.0
+        ]
+      ],
+      "n_observations": 14734
+    }
+  },
+  "n_train_rows": 14734
+}

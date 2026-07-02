@@ -1,0 +1,68 @@
+# GC-GARCH Mahalanobis remake2 result
+
+Reference data: train_data/train_sp500_us10y.csv
+Target data: gc_garch/models/pair_t_static/runs/pair_t_static_001/evaluation/mahalanobis_input/*.csv
+Reference window length: 1260
+Reference stride: 126
+Reference windows: 107
+Covariance inverse: ordinary sample covariance + Gauss-Jordan inverse
+
+Selected features:
+- sp500_mean
+- sp500_std
+- sp500_skew
+- sp500_kurtosis
+- dgs10_mean
+- dgs10_std
+- dgs10_skew
+- dgs10_kurtosis
+- sp500_abs_q90
+- sp500_abs_q95
+- sp500_abs_q99
+- sp500_abs_q99_over_std
+- dgs10_abs_q90
+- dgs10_abs_q95
+- dgs10_abs_q99
+- dgs10_abs_q99_over_std
+- sp500_autocorr_lag1
+- sp500_autocorr_lag5
+- sp500_abs_autocorr_lag1
+- sp500_abs_autocorr_lag5
+- dgs10_autocorr_lag1
+- dgs10_autocorr_lag5
+- dgs10_abs_autocorr_lag1
+- dgs10_abs_autocorr_lag5
+- cross_corr
+- joint_abs_q95_move_ratio
+
+Joint extreme event definition:
+- `joint_abs_q95_move_ratio` is the fraction of rows where both abs(sp500) and abs(DGS10) are at or above their own 95% absolute-move quantile within the same sample/window.
+
+Reference window distance summary:
+- min: 3.572588
+- mean: 5.008715
+- std: 0.822254
+- max: 8.202014
+
+Ranking by Mahalanobis distance and position in reference distribution:
+file,generator,n_rows,mahalanobis_distance,reference_percentile,empirical_upper_tail_probability
+mask10_gc.csv,gc_garch,1260,29.602355,100.00,0.000000
+mask4_gc.csv,gc_garch,1260,17.175796,100.00,0.000000
+mask13_gc.csv,gc_garch,1260,16.078056,100.00,0.000000
+mask17_gc.csv,gc_garch,1260,15.918197,100.00,0.000000
+mask18_gc.csv,gc_garch,1260,15.024559,100.00,0.000000
+mask9_gc.csv,gc_garch,1260,14.763319,100.00,0.000000
+mask12_gc.csv,gc_garch,1260,14.421678,100.00,0.000000
+mask8_gc.csv,gc_garch,1260,14.172843,100.00,0.000000
+mask2_gc.csv,gc_garch,1260,13.141621,100.00,0.000000
+mask6_gc.csv,gc_garch,1260,12.911156,100.00,0.000000
+mask19_gc.csv,gc_garch,1260,12.502231,100.00,0.000000
+mask3_gc.csv,gc_garch,1260,11.586819,100.00,0.000000
+mask11_gc.csv,gc_garch,1260,11.237089,100.00,0.000000
+mask1_gc.csv,gc_garch,1260,11.148295,100.00,0.000000
+mask7_gc.csv,gc_garch,1260,9.779174,100.00,0.000000
+mask15_gc.csv,gc_garch,1260,9.607948,100.00,0.000000
+mask14_gc.csv,gc_garch,1260,8.860085,100.00,0.000000
+mask20_gc.csv,gc_garch,1260,8.420974,100.00,0.000000
+mask5_gc.csv,gc_garch,1260,6.944139,96.26,0.037383
+mask16_gc.csv,gc_garch,1260,6.093863,91.59,0.084112
