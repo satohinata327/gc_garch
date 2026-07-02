@@ -1,0 +1,6 @@
+{
+  "window_length": 1260,
+  "stride": 126,
+  "origin_script": "garch_origin/mahalanobis_eval/scripts/run_mahalanobis_eval.py",
+  "remake2_script": "mahalanobis_remake1/scripts/run_mahalanobis_remake2.py"
+}

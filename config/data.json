@@ -1,0 +1,5 @@
+{
+  "train_csv": "train_data/train_sp500_us10y.csv",
+  "features": ["sp500", "DGS10"],
+  "scale_factor": 100.0
+}

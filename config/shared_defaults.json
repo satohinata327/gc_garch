@@ -1,0 +1,10 @@
+{
+  "generated_length": 1260,
+  "num_generated": 20,
+  "seed": 20260702,
+  "burn_in": 750,
+  "volatility_model": "gjr_garch11",
+  "candidate_selection": {
+    "enabled": false
+  }
+}
