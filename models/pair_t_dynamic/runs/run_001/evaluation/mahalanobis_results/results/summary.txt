@@ -1,0 +1,66 @@
+# GC-GARCH dynamic Mahalanobis evaluation result
+
+Reference data: train_data/train_sp500_us10y.csv
+Target data: gc_garch/models/pair_t_dynamic/runs/run_001/evaluation/mahalanobis_input/*.csv
+Reference window length: 1260
+Reference stride: 126
+Reference windows: 107
+Covariance inverse: ordinary sample covariance + Gauss-Jordan inverse
+Reference window distance summary:
+- min: 3.209714
+- mean: 4.391009
+- std: 0.732900
+- max: 7.107789
+
+Selected features:
+- sp500_std
+- sp500_q01
+- sp500_q05
+- sp500_q95
+- sp500_q99
+- sp500_abs_autocorr_lag1
+- sp500_abs_autocorr_lag5
+- sp500_abs_autocorr_lag20
+- dgs10_std
+- dgs10_q01
+- dgs10_q05
+- dgs10_q95
+- dgs10_q99
+- dgs10_abs_autocorr_lag1
+- dgs10_abs_autocorr_lag5
+- dgs10_abs_autocorr_lag20
+- cross_corr
+- rolling_corr_std_60
+- corr_down_sp500_q05
+- corr_up_sp500_q95
+
+Ranking by Mahalanobis distance and position in reference distribution:
+file,generator,n_rows,mahalanobis_distance,reference_percentile,empirical_upper_tail_probability
+mask7_gc.csv,gc_garch_dynamic,1260,26.781384,100.00,0.000000
+mask13_gc.csv,gc_garch_dynamic,1260,25.728201,100.00,0.000000
+mask18_gc.csv,gc_garch_dynamic,1260,20.470916,100.00,0.000000
+mask15_gc.csv,gc_garch_dynamic,1260,15.627778,100.00,0.000000
+mask1_gc.csv,gc_garch_dynamic,1260,14.694858,100.00,0.000000
+mask17_gc.csv,gc_garch_dynamic,1260,14.484597,100.00,0.000000
+mask10_gc.csv,gc_garch_dynamic,1260,13.729297,100.00,0.000000
+mask19_gc.csv,gc_garch_dynamic,1260,12.185311,100.00,0.000000
+mask6_gc.csv,gc_garch_dynamic,1260,11.649439,100.00,0.000000
+mask20_gc.csv,gc_garch_dynamic,1260,10.911270,100.00,0.000000
+mask12_gc.csv,gc_garch_dynamic,1260,9.420245,100.00,0.000000
+mask16_gc.csv,gc_garch_dynamic,1260,9.115827,100.00,0.000000
+mask5_gc.csv,gc_garch_dynamic,1260,8.991621,100.00,0.000000
+mask2_gc.csv,gc_garch_dynamic,1260,8.342249,100.00,0.000000
+mask3_gc.csv,gc_garch_dynamic,1260,7.321217,100.00,0.000000
+mask14_gc.csv,gc_garch_dynamic,1260,7.238723,100.00,0.000000
+mask11_gc.csv,gc_garch_dynamic,1260,7.042831,99.07,0.009346
+mask9_gc.csv,gc_garch_dynamic,1260,6.761879,97.20,0.028037
+mask4_gc.csv,gc_garch_dynamic,1260,5.865054,95.33,0.046729
+mask8_gc.csv,gc_garch_dynamic,1260,5.230084,91.59,0.084112
+
+Interpretation:
+- Smaller distance means the sample is closer to the real-data feature distribution estimated from train_data.
+- Larger distance means the sample is farther from the reference distribution and is treated as more generated-data-like.
+- Real reference windows also have nonzero Mahalanobis distances; therefore, the key quantity is where each mask distance lies inside the empirical reference-window distance distribution.
+- `reference_percentile` is the percentage of reference windows with distance less than or equal to the mask distance.
+- `empirical_upper_tail_probability` is the fraction of reference windows with distance greater than or equal to the mask distance.
+- This is a draft baseline using ordinary sample mean and ordinary sample covariance.

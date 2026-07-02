@@ -1,0 +1,7 @@
+# pair_t_dynamic evaluation
+run_dir: gc_garch/models/pair_t_dynamic/runs/run_001
+mask_dir: gc_garch/models/pair_t_dynamic/runs/run_001/evaluation/mahalanobis_input
+origin_output: gc_garch/models/pair_t_dynamic/runs/run_001/evaluation/mahalanobis_results
+remake2_output: gc_garch/models/pair_t_dynamic/runs/run_001/evaluation/mahalanobis_remake2_results
+window_length: 1260
+stride: 126

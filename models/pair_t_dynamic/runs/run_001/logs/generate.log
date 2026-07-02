@@ -1,0 +1,13 @@
+# pair_t_dynamic generation
+run_dir: gc_garch/models/pair_t_dynamic/runs/run_001
+train_csv: train_data/train_sp500_us10y.csv
+features: sp500, DGS10
+num_generated: 20
+generated_length: 1260
+burn_in: 750
+phi_bar: -0.051000
+a: 0.080000
+b: 0.900000
+degrees_of_freedom: 6.400000
+signal_window: 60
+candidate_selection: disabled
